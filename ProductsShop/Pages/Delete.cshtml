@@ -1,0 +1,13 @@
+﻿@page "{id:int}"
+@model ProductsShop.Pages.DeleteModel
+
+<h2>Delete Product</h2>
+
+<div>
+    <p>Are you sure you want to delete: <strong>@Model.Product.Name</strong>?</p>
+    <form method="post">
+        <input type="hidden" asp-for="Product.Id" />
+        <button type="submit">Yes, delete</button>
+        <a asp-page="/Index">Cancel</a>
+    </form>
+</div>

@@ -1,0 +1,15 @@
+﻿@page "{id:int}"
+@model ProductsShop.Pages.EditModel
+
+<h2>Edit Product</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Product.Id" />
+    <label>Name:</label>
+    <input asp-for="Product.Name" />
+    <label>Price:</label>
+    <input asp-for="Product.Price" />
+    <label>Category:</label>
+    <input asp-for="Product.Category" />
+    <button type="submit">Save</button>
+</form>
